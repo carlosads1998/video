@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api',
     'rest_framework',    
-    'storages',
 ]
 
 
@@ -127,13 +126,11 @@ STATIC_URL = '/static/'
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
 
-
 AWS_ACESS_KEY_ID = 'AKIAQXQNTK3SF3F7WOKA'
 AWS_SECRET_ACESS_KEY= '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'
 AWS_STORAGE_BUCKET_KEY= 'video-cads'
 
 AWS_S3_FILE_OVERWRITE= False
 AWS_DEFAULT_ACL= None
-DEFAULT_FILE_STORAGE= 'storages.backends.s3boto3.S3Boto3Storage'
-
+DEFAULT_FILE_STORAGE= 'storages.backends.s3boto.S3Boto3Storage'
 django_heroku.settings(locals())
