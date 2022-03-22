@@ -12,3 +12,4 @@ whitenoise==6.0.0
 boto3==1.21.23
 botocore==1.24.23
 django-storages==1.12.3
+botocore==1.24.23
